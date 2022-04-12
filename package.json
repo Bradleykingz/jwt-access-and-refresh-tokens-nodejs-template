@@ -1,0 +1,12 @@
+{
+  "name": "jwt-access-and-refresh-tokens",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.1",
+    "joi": "^17.6.0",
+    "ioredis": "^5.0.4",
+    "typescript": "^4.6.3"
+  }
+}
