@@ -3,10 +3,48 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build:dev": "babel src --out-dir build --extensions \".ts\" --copy-files --source-maps --plugins source-map-support  -w",
+    "start:dev": "NODE_ENV=development nodemon build/bin/app.bin.js"
+  },
   "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@hapi/catbox-redis": "^6.0.2",
+    "@hapi/glue": "^8.0.0",
     "@hapi/hapi": "^20.2.1",
-    "joi": "^17.6.0",
+    "@hapi/inert": "^6.0.5",
+    "@hapi/vision": "^6.1.0",
+    "@prisma/client": "^3.12.0",
+    "@types/bcrypt": "^5.0.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^8.0.3",
+    "hapi-auth-jwt2": "^10.2.0",
     "ioredis": "^5.0.4",
-    "typescript": "^4.6.3"
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "ms": "^2.1.3",
+    "typescript": "^4.6.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/hapi__catbox-redis": "^5.0.4",
+    "@types/hapi__glue": "^6.1.1",
+    "@types/hapi__hapi": "^20.0.10",
+    "@types/hapi__inert": "^5.2.3",
+    "@types/hapi__vision": "^5.5.3",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/ms": "^0.7.31",
+    "@types/node": "^14.11.1",
+    "@types/uuid": "^8.3.4",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-source-map-support": "^2.1.3",
+    "nodemon": "^2.0.15",
+    "prisma": "^3.12.0"
   }
 }
