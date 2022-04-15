@@ -1,0 +1,24 @@
+{
+  "presets": ["@babel/env", "@babel/typescript"],
+  "plugins": [
+    "@babel/transform-runtime",
+    ["module-resolver", {
+      "root": ".",
+      "alias": {
+        "@config": "./build/config/",
+        "@controllers": "./build/api/controllers/",
+        "@constants": "./build/constants/",
+        "@events": "./build/events/",
+        "@helpers": "./build/helpers/",
+        "@plugins": "./build/plugins/",
+        "@models": "./build/models/",
+        "@services": "./build/api/services/",
+        "@routes": "./build/api/routes/",
+        "@validation": "./build/validation/"
+      }
+    }]
+  ],
+  "ignore": [
+    "./node_modules"
+  ]
+}
