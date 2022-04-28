@@ -9,6 +9,7 @@
         "@controllers": "./build/api/controllers/",
         "@constants": "./build/constants/",
         "@events": "./build/events/",
+        "@generated": "./prisma/generated/prisma-client-js/",
         "@helpers": "./build/helpers/",
         "@plugins": "./build/plugins/",
         "@models": "./build/models/",

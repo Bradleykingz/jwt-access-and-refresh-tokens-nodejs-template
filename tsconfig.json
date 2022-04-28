@@ -1,34 +1,65 @@
 {
   "compilerOptions": {
-    "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
-    "lib": ["ES2020"],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
-    "module": "commonjs",                                /* Specify what module code is generated. */
-    "rootDir": "./src",                                  /* Specify the root folder within your source files. */
-    "moduleResolution": "node",                       /* Specify how TypeScript looks up a file from a given module specifier. */
-    "baseUrl": "./src",
-    "paths": {
-      "@config": ["config/"],
-      "@controllers": ["api/controllers/"],
-      "@constants": ["constants/"],
-      "@events": ["events/"],
-      "@helpers": ["helpers/"],
-      "@plugins": ["plugins/"],
-      "@models": ["models/"],
-      "@services": ["api/services/"],
-      "@routes": ["api/routes/"],
-      "@types": ["types/types.ts"],
-      "@validation": ["validation/"],
-     },                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
-    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */
-    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
-    "strict": true,                                      /* Enable all strict type-checking options. */
-    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
-    "exclude": [
-      "node_modules",
-      "**/*.spec.ts"
+    "target": "es2016",
+    /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "lib": [
+      "ES2020"
     ],
-    "include": [
-      "src/**/*"
-    ]
+    /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+    "module": "commonjs",
+    /* Specify what module code is generated. */
+    "rootDir": "./src",
+    /* Specify the root folder within your source files. */
+    "moduleResolution": "node",
+    /* Specify how TypeScript looks up a file from a given module specifier. */
+    "outDir": "build",
+    "baseUrl": ".",
+    "paths": {
+      "@config": [
+        "src/config/"
+      ],
+      "@controllers": [
+        "src/api/controllers/"
+      ],
+      "@constants": [
+        "src/constants/"
+      ],
+      "@events": [
+        "src/events/"
+      ],
+      "@helpers": [
+        "src/helpers/"
+      ],
+      "@plugins": [
+        "src/plugins/"
+      ],
+      "@models": [
+        "src/models/"
+      ],
+      "@generated": [
+        "./prisma/generated/prisma-client-js"
+      ],
+      "@services": [
+        "src/api/services/"
+      ],
+      "@routes": [
+        "src/api/routes/"
+      ],
+      "@types": [
+        "src/types/types.ts"
+      ],
+      "@validation": [
+        "src/validation/"
+      ]
+    },
+    /* Specify a set of entries that re-map imports to additional lookup locations. */
+    "esModuleInterop": true,
+    /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */
+    "forceConsistentCasingInFileNames": true,
+    /* Ensure that casing is correct in imports. */
+    "strict": true,
+    /* Enable all strict type-checking options. */
+    "skipLibCheck": true
+    /* Skip type checking all .d.ts files. */
   }
 }

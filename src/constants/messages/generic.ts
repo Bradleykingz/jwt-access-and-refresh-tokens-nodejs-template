@@ -1,0 +1,1 @@
+export const GENERIC_INPUT_ERROR = "An error occurred. Please fix the errors and try again."
